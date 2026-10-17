@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Expense Tracker</h1>
+        <p>Manage your income and expense</p>
+    </header>
+
+    <main>
+        <section class="summary-cards">
+            <div class="card">
+                <h2>Total Balance</h2>
+                <p id="total-balance">Rs. 0</p>
+            </div>
+            <div class="card">
+                <h2>Total Income</h2>
+                <p id="total-income">Rs. 0</p>
+            </div>
+            <div class="card">
+                <h2>Total Expense</h2>
+                <p id="total-expense">Rs. 0</p>
+            </div>
+        </section>
+        <section class="transaction-form">
+            <h2>Add Transaction</h2>
+            <form action="">
+                <label for="transaction-name">Transaction Name</label>
+                <input type="text" id="transaction-name" placeholder="">
+                <label for="amount">Amount</label>
+                <input type="number" name="amount" id="amount" >
+                <label for="type">Type</label>
+                <select name="type" id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option value="food">Food</option>
+                    <option value="education">Education</option>
+                    <option value="transport">Transport</option>
+                    <option>From soopraat(Kowana)</option>
+                    <option>Ghol pa Juicer owahal</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+                <button type="submit">Add Transaction</button>
+            </form>
+        </section>
+        <section class="transactions-section">
+            <h2>Transactions</h2>
+            <div class="transaction-list"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
